@@ -1,61 +1,93 @@
-*{
+/* STYLE INIT */
+
+* {
     margin: 0;
     padding: 0;
     outline: 0;
     border: 0;
     border-spacing: 0;
     box-sizing: border-box;
-    
 }
 
-#buttons{
+/* HEADER DESIGN */
+
+header {
+
+    text-align: center;
+    font-size: 5vh;
+}
+
+/* BUTTONS DESIGN */
+
+button {
+    /* default Style for EVERY button */
+    font-size: 5vh;
+    display: flex;
+    margin: 1vh;
+    padding: 2vh;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#buttons {
+    /* Div for both CHECK and RESET buttons flex box */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    font-size: 10vh;
-}
-#check{
-    display: flex;
-    margin: 2vh;
-    padding: 1em, 2em;
-    border: 5px solid rgb(24, 239, 24);
-    text-align: center;
     justify-content: center;
-}
-#reset{
-    display: flex;
-    border: 5px solid red;
-    justify-content: center;
-    text-align: center;
-    margin: 2vh;
+    /* justify-content: space-around;  
+    -> looks OK but would need to be capped at grid width, 
+    may accomodate title or logo between */
 }
 
+#buttonCheck {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(24, 239, 24);
+}
 
-table{
+#buttonReset {
+    border: 5px solid black;
+    background-color: red;
+}
+
+/* GRID DESIGN */
+
+table { /* Centers grid + outline */
     margin: auto;
     border: 3px solid black;
 }
 
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
-input{
+input { /* Base grid design */
     background-color: lightgrey;
-    height: 9vh;
-    width: 9vh;
+    height: 8vh;
+    width: 8vh;
     text-align: center;
-    font-size: 10vh;
+    font-size: 5vh;
     border: 1px solid grey;
     display: block;
 }
-input:invalid{
+
+/* Getting rid of browser up down arrows in inputs */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* visual feedback for invalid number */
+input:invalid {
     background-color: red;
 }
 
-tr:nth-of-type(3), tr:nth-of-type(6){
+/* Adding inside divisions */
+tr:nth-of-type(3), tr:nth-of-type(6) { /* vertical divisions */
     border-bottom: 3px solid black;
-} 
-tr{
+}   tr {
     display: block;
+    }
+
+td:nth-of-type(3), td:nth-of-type(6) { /* horizontal divisions */
+    border-right: 3px solid black;
 }
-td:nth-of-type(3), td:nth-of-type(6){
-    border-right:3px solid black;
-}
+
+
