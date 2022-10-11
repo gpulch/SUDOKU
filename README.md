@@ -15,8 +15,10 @@ to do :
 - build the reset button
 - add random numbers to get actual interesting grids (must study how sudokus work a bit..)
 - add a way to survive refreshes (only reset button must wipe board)
+- media queries
 
 to maybe do :
+- dark mode toggle
 - bigger boards with difficulty settings
 - maybe add a hint / help / solution system
 - timing / ranking / leaderboard system

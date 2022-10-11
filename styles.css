@@ -39,14 +39,22 @@ button {
     may accomodate title or logo between */
 }
 
+
+
 #buttonCheck {
     border: 5px solid rgb(0, 0, 0);
     background-color: rgb(24, 239, 24);
+}
+#buttonCheck:active {
+    background-color: lightgreen;
 }
 
 #buttonReset {
     border: 5px solid black;
     background-color: red;
+}
+#buttonReset:active {
+    background-color: rgb(242, 114, 114);
 }
 
 /* GRID DESIGN */
